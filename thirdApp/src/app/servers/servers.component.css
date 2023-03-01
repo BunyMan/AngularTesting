@@ -1,0 +1,7 @@
+appServer{
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #59ff00;
+    padding: 20px;
+    box-shadow: 0 2px 3px #ccc;
+}
