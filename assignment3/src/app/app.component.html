@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Assignment 3</h1>
+      <hr>
+      <!-- <button class="btn btn-primary" (click)="showSecret = !showSecret">Toggle Display</button> -->
+      <button class="btn btn-primary" (click)="onToggleDetails()">Toggle Display</button>
+      <p *ngIf="showSecret">Secret Password = berd123</p>
+      <div *ngFor="let logItem of log; let i = index"
+      [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+      [ngClass]="{'white-text': i >= 4}">{{ logItem }}</div>
+    </div>
+  </div>
+</div>
