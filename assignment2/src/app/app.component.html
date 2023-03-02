@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>ASSIGNMENT 2</h1>
+      <hr>
+      <label>Username:<br></label>
+      <input type="text" class="form-control" [(ngModel)]="username">
+      <br>
+      <p>User Id will be: @{{username}}</p>
+      <button
+      class="btn btn-primary"
+      [disabled]="!username"
+      (click)="username = ''">Reset User</button>
+    </div>
+</div>
